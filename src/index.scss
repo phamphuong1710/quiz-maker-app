@@ -89,7 +89,7 @@ code {
     margin-right: 8px;
   }
 
-  &:hover,
+  &:not(.result):hover,
   &.select-item,
   &.success {
     color: #FFFFFF;

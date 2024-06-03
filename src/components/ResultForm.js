@@ -62,7 +62,7 @@ const QuestionItem = ({ question, answers, choosedAnswer, correctAnswer }) => {
             answers.map((answer, index) =>
               <button
                 key={index}
-                className={'btn-answer ' + getColorOfAnswer(answer)}
+                className={'result btn-answer ' + getColorOfAnswer(answer)}
                 variant={getColorOfAnswer(answer)}
               >
                 <span dangerouslySetInnerHTML={{ __html: answer }} />
