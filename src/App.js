@@ -1,16 +1,16 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Quiz from "./pages/Quiz";
 import './index.scss';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Quiz />} />
         <Route path="/result" element={<Quiz />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
